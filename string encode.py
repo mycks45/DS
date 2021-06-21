@@ -14,13 +14,12 @@ def encode(message, key):
             new_message += chr(val)
     return new_message
 
-def decode(message, key):
-    return encode(message, -key)
+
 
 
 message = 'hai'
 key = 3
 
+print(message)
 mess = encode(message, key)
 print(mess)
-# print(decode(mess, -key))

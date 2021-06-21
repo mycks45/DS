@@ -140,14 +140,13 @@ class DoublyLinkedList:
 
 arr = ['time', 'money', 'tech', 'cat', 'dog', 'tie', 'last', 'pen']
 ll = DoublyLinkedList()
+ll.insert_values(arr)
 ll.insert_at_begining(1)
 ll.insert_at_end(356)
-ll.insert_values(arr)
-ll.remove_by_data('cat')
+# ll.remove_by_data('cat')
 ll.insert_value_before('tech', 'before')
 ll.insert_value_after('tech', 'after')
 ll.pop_from_begining()
 ll.pop_from_end()
-
 ll.print_forward()
 

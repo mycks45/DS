@@ -13,5 +13,6 @@ def insertion_sort(arr):
 
 arr = [12,43,12,34,23,56,32,41,45,24,64,57,97,35]
 
+print(arr)
 result = insertion_sort(arr)
 print(result)

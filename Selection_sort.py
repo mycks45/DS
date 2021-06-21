@@ -12,7 +12,8 @@ def selection_sort(arr):
         i +=1
     return arr
 
-arr = [12,43,12,34,23,56,32,41,45,24,64,57,97,35]
+arr = [5,3,78,212,43,12,34,23,56,32,41,45,24,64,57,97,35]
 
+print(arr)
 result = selection_sort(arr)
 print(result)

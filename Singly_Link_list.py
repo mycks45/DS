@@ -1,7 +1,4 @@
 
-from collections import Counter
-
-
 class Node:
     def __init__(self, data=None, next=None):
         self.data = data
@@ -200,6 +197,7 @@ class LinkedList:
 ll = LinkedList()
 
 arr = ['time', 'money', 'tech', 'cat', 'dog', 'tie','last','last','cat']
+print(arr)
 ll.insert_values(arr)
 # ll.insert_at_begining('lol')
 # ll.insert_at_end('tiiii')
@@ -210,10 +208,10 @@ ll.insert_values(arr)
 # ll.insert_value_before('money', 'before')
 # ll.insert_value_before('tiiii', 'before')
 # ll.remove_by_index(1)
-# ll.queue_pop()
-# # ll.stack_pop()
+ll.queue_pop()
+ll.stack_pop()
 ll.sort_list()
 ll.remove_dub()
-# ll.print()
-# ll.print_reverse()
 ll.print()
+# ll.print_reverse()
+# ll.print()

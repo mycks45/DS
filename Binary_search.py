@@ -22,4 +22,4 @@ number_list = [1,2,3,4,5,6,12,23,34,45,56,67,78,89]
 item =78
 
 result = binarySearch(number_list, item)
-print(result)
+print('Index of the item is ',result)
