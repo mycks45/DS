@@ -81,8 +81,7 @@ class MinHeap:
 
     def display(self):
         print(self.heap)
-        
-
+         
 
 
 arr = [6,2,8,7]

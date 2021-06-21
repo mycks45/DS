@@ -1,45 +1,40 @@
 
-import numpy
-# while True:
-#     y = int(input('enter no whose table you want: '))
 
-#     for x in range(1,11):
-#         ans = x*y
-#         print(x,'x',y,'= ',ans)
+def swap(arr):
+    arr[0],arr[-1] = arr[-1],arr[0]
+    return arr
 
-#     res = input('Continue Y/N : ')
+def multiple(arr):
+    res = 1
+    for i in arr:
+        res = res * i
+    return res
 
-#     if res == 'N' or res == 'n':
-#         break
+def findMinValues(arr):
+    arr.sort()
+    return arr[0]
 
+def findEven(arr):
+    even = []
+    for i in arr:
+        if i % 2 == 0:
+            even.append(i)
+    return even
 
-# time =[
-#     [{1:False},{3:False},{4:False},{5:False}],
-#     [{1:False},{3:False},{4:False},{5:False}],
-#     [{1:False},{3:False},{4:False},{5:False}],
-    
-# ]
-# vist = [False,False]
-# print(time[1][0])
-# print(vist)
-# print(len(time[2]))
+def findOdd(arr):
+    odd = []
+    for i in arr:
+        if i % 2 == 1:
+            odd.append(i)
+    return odd
 
+arr = [12,23,54,34,23,78,4,6,8,75,6,3,5,7]
+# print(swap(arr))
+# arr.pop()
 
+# arr = multiple(arr)
+# arr = findMinValues(arr)
+# arr = findOdd(arr)
+# arr = findEven(arr)
 
-checkRiverSize = [
-    [1,2,4,6,3],
-    [1,2,8,6,3],
-    [1,2,4,6,3],
-]
-visited = [ [False] * len(checkRiverSize[0]) ] * len( checkRiverSize )
-sizes = []
-
-
-print(visited)
-
-a='fhfgfghf'
-b=list(a)
-b[2] ='6'
-y=''
-gh=y.join(b)
-print(gh)
+print(arr)
